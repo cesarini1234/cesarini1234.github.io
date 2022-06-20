@@ -1,0 +1,115 @@
+{
+  "configVersion": 1,
+  "timestamp": 1655750551469,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/favicon.ico",
+        "/index.html",
+        "/main.1a88a9cb1dae17df.js",
+        "/manifest.webmanifest",
+        "/polyfills.899da28ff81b4985.js",
+        "/runtime.265ad40e893bd4fc.js",
+        "/scripts.ae04d07883bbf047.js",
+        "/styles.973035f91f277727.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96.png",
+        "/assets/images/Logo.svg",
+        "/assets/images/accessibility.svg",
+        "/assets/images/cart.svg",
+        "/assets/images/discapacidad.png",
+        "/assets/images/google.svg",
+        "/assets/images/hijos.jpg",
+        "/assets/images/inicio.jpg",
+        "/assets/images/navidad.jpg",
+        "/assets/images/navidad2.jpg",
+        "/assets/images/paso1.jpg",
+        "/assets/images/paso2.jpg",
+        "/assets/images/paso3.jpg",
+        "/assets/images/phone.svg",
+        "/assets/images/shop.svg",
+        "/assets/images/stop.png",
+        "/assets/images/textura-carta.jpg"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/assets/icons/icon-128x128.png": "f68221ddff84e027ad2cb93102462d39c0fe4290",
+    "/assets/icons/icon-144x144.png": "5e1843597fad35eb1d043537ca724e8bd8df3e12",
+    "/assets/icons/icon-152x152.png": "17b200199e14996c541ef99576739badc642174c",
+    "/assets/icons/icon-192x192.png": "31c87e1213479ebe4c5e0eb1b5ba1b02903090a3",
+    "/assets/icons/icon-384x384.png": "a31de00a7c053b6ba69555a9211f47cb3bc724f3",
+    "/assets/icons/icon-512x512.png": "4a2eafac12e2817bd61364290ea3b726d3bc6bc0",
+    "/assets/icons/icon-72x72.png": "e2198e03c956b4141cd2100c8bef335e28a1efe7",
+    "/assets/icons/icon-96x96.png": "547159550cd79d360f7a6ae8b06a1256f03f0b55",
+    "/assets/images/Logo.svg": "89338effcd8a4116fb84fe003a80bd4449f28f6f",
+    "/assets/images/accessibility.svg": "d4bf4d0d5a778157a53490081d7fbf1fa16e87b8",
+    "/assets/images/cart.svg": "707389d44673cbf3a1f6f229cef79a8c66fccb32",
+    "/assets/images/discapacidad.png": "6aae153515ebe062e287c4ba616dc8b3488cef08",
+    "/assets/images/google.svg": "e3f0ed9a2a4d57102e3290ffa67544e71b23e46b",
+    "/assets/images/hijos.jpg": "c5751fd84788d86911d29d62106fd1ddb93333a5",
+    "/assets/images/inicio.jpg": "6f221ae9301fd98f1ac4109b28db20e6950ea8e3",
+    "/assets/images/navidad.jpg": "0ed650461abe814764bea8bb67ee20fe442fea03",
+    "/assets/images/navidad2.jpg": "1d3d1689969f560858b6a9f44959274c9dd19db3",
+    "/assets/images/paso1.jpg": "6e6d2d612859adab25752b0f542c0e980222f342",
+    "/assets/images/paso2.jpg": "8fe65d39dbdcc960f408db8822f259eb81d50aa0",
+    "/assets/images/paso3.jpg": "dbb6307826f126df7ffcb9e6576700763b7f9c49",
+    "/assets/images/phone.svg": "e2b63802f8039704ed2063bfb9cc44d4056c79eb",
+    "/assets/images/shop.svg": "0c8dee943da68677e972fb95c1f2b2ef4b45ec7a",
+    "/assets/images/stop.png": "691d5012b21a9282007a3de4eca15f40b41514c2",
+    "/assets/images/textura-carta.jpg": "9ce200880251bd3041c6ffd1cb7e4f6c92de05c2",
+    "/favicon.ico": "0dff8c39a5a26ac419797770224d5789ace4752f",
+    "/index.html": "16ad4e8eb5921732c514007144a8df28e891768b",
+    "/main.1a88a9cb1dae17df.js": "5c2a6357ec7ba48c5e4072a6945e048e2303632c",
+    "/manifest.webmanifest": "ca2d00d43534b06c614595e27943bbae938592da",
+    "/polyfills.899da28ff81b4985.js": "d5d0becbf659787f1e9e45e3491a757d1211abad",
+    "/runtime.265ad40e893bd4fc.js": "99ec2d2b7c043b61902c8f3ae3bf1edbfd66f2f9",
+    "/scripts.ae04d07883bbf047.js": "a025cc3a69b948ee751444bd581e067159c40f30",
+    "/styles.973035f91f277727.css": "10c47512eef9a734990b51cb26b5d36e9e3afd62"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
