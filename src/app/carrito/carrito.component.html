@@ -1,0 +1,39 @@
+<br>
+
+<div class="container">
+
+    <h2 class="text-left" >Carrito <img src="../../assets/images/cart.svg" height="30px"></h2>
+    <hr>
+    <div class="container">
+        <p>
+        <button class="btn btn-dark" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            Filtros
+        </button>
+        </p>
+        <div class="collapse" id="collapseExample">
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-info" (click)="alfa()">Alfabetico</button>
+                <button type="button" class="btn btn-info" (click)="precioA()">Precio</button>
+                <button type="button" class="btn btn-info" (click)="precioD()">Precio</button>
+                <button type="button" class="btn btn-info" (click)="edad()">Edad</button>
+              </div>
+        </div>
+        <div class="row">
+            <div class="col-sm" *ngFor="let data of dataset | paginate: {itemsPerPage: 3, currentPage: pages}">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" [src]="data.img" alt="Card image cap">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">{{data.Nombre | capitalizado:true}}</h5>
+                        <p class="card-text">Edad Recomendada: {{data.Edad}}</p>
+                        <p class="card-text">${{data.Precio}} MXN</p>
+                        <button class="btn btn-danger" (click)="eliminarArticulo()">Quitar del Carrito</button>
+                    </div>
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<pagination-controls class="text-center" (pageChange)="pages = $event"></pagination-controls>

@@ -1,0 +1,18 @@
+textarea {
+    background: transparent;
+    color: black;
+    resize: none;
+    border: 0 none;
+    width: 99%;
+    font-size: 1em;
+    outline: none;
+    height: 100%;
+    position: relative;
+}
+
+textarea:focus {
+    color: black;
+    background: transparent;
+    border: none;
+}
+

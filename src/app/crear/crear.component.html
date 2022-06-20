@@ -1,0 +1,72 @@
+<header>
+    <!-- Background image -->
+    <div class="p-5 text-center bg-image" style="
+        background-image: url('../../assets/images/navidad2.jpg');
+        background-size: cover;
+        height: 350px;
+    ">
+        <br>
+        <br>
+        <div class="mask">
+            <div class="d-flex justify-content-center align-items-center h-100">
+                <div class="text-white">
+                    <h2 class="mb-3">Bienvenido</h2>
+                    <h1 class="mb-3">¡Estamos listos para empezar!</h1>
+                    <h4 class="mb-3">Empieza a escribir. </h4>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Background image -->
+</header>
+
+<br>
+
+<hr>
+
+<div class="container">
+
+    <div class="bg-image" style="background-image: url('../../assets/images/textura-carta.jpg');
+            height: 60vh;
+            border-radius: 5px;">
+
+        <br>
+
+        <div class="container">
+
+            <h4>Querido Santa...</h4>
+
+            <form class="form-group" [formGroup]="cartaForm">
+
+                <div class="h4" *ngIf="cartaForm.controls['mensaje'].errors?.['required']">
+                    Escribe aquí...
+                </div>
+
+                <textarea class="form-control" type="text" formControlName="mensaje" maxlength="1000"
+                    oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea>
+
+            </form>
+
+            <br>
+
+            <h4>Me gustaria...</h4>
+
+            <select name="Juguetes">
+                <option *ngFor="let juguete of listaJuguetes" [value]="juguete.nombre">
+                    {{juguete.nombre}}
+                </option>
+            </select>
+
+        </div>
+
+    </div>
+
+
+
+
+
+</div>
+
+<br>

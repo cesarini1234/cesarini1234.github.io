@@ -1,0 +1,102 @@
+<br>
+
+<div class="container">
+
+    <h3>Bienvenido al CRUD [v0.1.23a]</h3>
+
+    <hr>
+
+    <h5>Elegir opcion:</h5>
+
+    <button type="button" class="btn btn-success" (click)="mostrarAgregar()">Agregar</button>
+    <button type="button" class="btn btn-danger" (click)="mostrarEliminar()">Eliminar</button>
+
+    <hr>
+
+    <form class="form-group" [formGroup]="crudForm" id="agregar" *ngIf="agregarCrud">
+
+        <h3>Agregar</h3>
+
+        <label>Nombre</label>
+        <input type="text" formControlName="nombre" class="form-control" placeholder="Ingresa el nombre del producto">
+
+        <div class="alert alert-danger" *ngIf="crudForm.controls['nombre'].errors?.['required']">
+            Por favor ingresa el nombre.
+        </div>
+
+        <label>Imagen</label>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Subir</span>
+            </div>
+            <div class="custom-file">
+                <input type="file" class="custom-file-input" formControlName="imagen"
+                    accept="image/png, image/gif, image/jpeg" (change)="onSelectFile($event)">
+                <label class="custom-file-label">Elegir imagen</label>
+            </div>
+        </div>
+
+        <img [src]="url" height="200">
+
+        <div class="alert alert-danger" *ngIf="crudForm.controls['imagen'].errors?.['required']">
+            Por favor sube una imagen.
+        </div>
+
+        <br>
+
+        <label>Precio</label>
+        <input type="text" formControlName="precio" class="form-control" placeholder="Ingresa el nombre del producto">
+
+        <div class="alert alert-danger" *ngIf="crudForm.controls['precio'].errors?.['required']">
+            Por favor ingresa el precio.
+        </div>
+
+        <div class="alert alert-danger" *ngIf="crudForm.controls['precio'].errors?.['pattern']">
+            Por favor ingresa sólo números.
+        </div>
+
+        <label>Edad</label>
+        <div class="input-group mb-3">
+            <select class="custom-select" formControlName="edad">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+            </select>
+        </div>
+
+        <div class="alert alert-danger" *ngIf="crudForm.controls['edad'].errors?.['required']">
+            Por favor ingresa la edad.
+        </div>
+
+        <button [disabled]="!crudForm.valid" type="button" class="btn btn-success" (click)="subirProducto()">Subir</button>
+
+    </form>
+
+    <form class="form-group" [formGroup]="crudEliminarForm" id="eliminar" *ngIf="!agregarCrud">
+
+        <h3>Eliminar</h3>
+
+        <label>Nombre</label>
+        <input type="text" formControlName="nombre" class="form-control" placeholder="Ingresa el nombre del producto">
+
+        <div class="alert alert-danger" *ngIf="crudEliminarForm.controls['nombre'].errors?.['required']">
+            Por favor ingresa el nombre.
+        </div>
+
+        <br>
+
+        <button [disabled]="!crudEliminarForm.valid" type="button" class="btn btn-danger" (click)="eliminarProducto()">Borrar</button>
+
+    </form>
+
+</div>

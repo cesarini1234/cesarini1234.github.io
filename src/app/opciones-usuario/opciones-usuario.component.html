@@ -1,0 +1,23 @@
+<br>
+
+<div class="container">
+
+    <h4>Información Hijos</h4>
+
+    <table class="table">
+     
+      <tr>
+        <th *ngFor="let column of headers">
+          {{column}}
+        </th>
+      </tr>
+
+      <tr *ngFor="let row of hijos">
+          <td>{{row.nombre}}</td>
+          <td>{{row.edad}}</td>
+          <td>{{row.correo}}</td>
+      </tr>
+
+    </table>
+
+</div>

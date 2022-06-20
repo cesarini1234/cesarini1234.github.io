@@ -1,0 +1,21 @@
+.container1{
+    position: fixed;
+    bottom: 20px;
+
+}
+.botones a, .icon-mas2{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    line-height: 55px;
+    transition: all 500ms ease;
+}
+
+.botones a:hover{
+    background: rgb(0, 152, 43);
+    border-radius: 1pc;
+    
+}
